@@ -44,14 +44,14 @@ test_datagen=ImageDataGenerator(rescale=1./255)
 
 
  
-#training set
+#training set having the images of various cats and dogs 
 training_set=train_datagen.flow_from_directory('dataset/training_set',
                                                target_size=(64,64),
                                                batch_size=32,
                                                class_mode='binary')
 
 
-#test set
+#test set having test images for various cats and dogs
 test_set=train_datagen.flow_from_directory('dataset/test_set',
                                                target_size=(64,64),
                                                batch_size=32,
